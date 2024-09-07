@@ -1,0 +1,14 @@
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    @@include("_head/_mobile.html")
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- endbuild -->
+    @@if (build == true) {
+        @@include("_head/_font.html")
+        @@include("_head/_favicon.html")
+        @@include("_head/_seo.html")
+        @@include("_head/_og.html")
+    }
+</head>

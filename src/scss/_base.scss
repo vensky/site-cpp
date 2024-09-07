@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 280px;
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    font: $font-base;
+}
