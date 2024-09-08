@@ -1,0 +1,35 @@
+.footer {
+    background-color: #f3f3f3;
+    padding: 60px 0 40px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__logo {
+        width: 180px;
+    }
+
+    &__copy {
+        display: block;
+        margin-top: 32px;
+        font-size: 16px;
+    }
+
+    &__contacts {
+        color: #000;
+        display: block;
+
+        >*:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__link {
+        color: inherit;
+        display: block;
+        text-decoration: none;
+    }
+}

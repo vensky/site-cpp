@@ -1,0 +1,17 @@
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        list-style: none;
+    }
+
+    &__link {
+        color: #0480c8;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #363636;
+        }
+    }
+}

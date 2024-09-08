@@ -1,0 +1,58 @@
+.hero {
+    color: #fff;
+    background-color: #000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(../img/hero.jpg);;
+    background-size: cover;
+    background-position: 100% 100%;
+    padding-top: 120px;
+    padding-bottom: 80px;
+
+    &__body {
+        max-width: 40%;
+    }
+
+    &__title {
+        font-size: 60px;
+        line-height: 1.1;
+        font-weight: 400;
+
+        +p {
+            font-size: 32px;
+            font-weight: 300;
+        }
+    }
+
+    &__button {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: $color-blue;
+        color: #fff;
+        padding: 12px 32px;
+        border-radius: 8px;
+        margin-top: 120px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #fff;
+            color: $color-blue;
+
+            svg {
+                fill: $color-blue;
+            }
+        }
+
+        svg {
+            fill: #fff;
+            width: 26px;
+            height: 26px;
+            transition: fill 0.3s;
+        }
+    }
+}
