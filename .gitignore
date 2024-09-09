@@ -46,6 +46,6 @@ bower_components
 *.log*
 
 # Project ignore files
-build
+# build
 dist
 src/assets
