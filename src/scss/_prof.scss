@@ -3,6 +3,8 @@
 
     &__list {
         list-style: none;
+        padding: 0;
+        margin: 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 24px 48px;
@@ -12,7 +14,7 @@
         }
 
         li {
-            background-color: #0056b3;
+            background-color: #000;
             color: #fff;
             height: 280px;
             position: relative;
@@ -21,8 +23,11 @@
             padding: 24px 16px;
             border-radius: 8px;
             overflow: hidden;
+            transition: background-color 0.3s;
 
             &:hover {
+                background-color: #0056b3;
+
                 img {
                     opacity: 0.2;
                 }
@@ -50,24 +55,25 @@
         h3 {
             font-weight: 400;
             position: relative;
-            z-index: 1;
+            z-index: 2;
             margin-top: auto;
+            pointer-events: none;
         }
 
-        p {
-            position: relative;
-            z-index: 1;
-            margin: 12px 0 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: opacity 0.3s, max-height 0.3s;
-        }
+        // p {
+        //     position: relative;
+        //     z-index: 2;
+        //     margin: 12px 0 0;
+        //     max-height: 0;
+        //     overflow: hidden;
+        //     transition: opacity 0.3s, max-height 0.3s;
+        // }
 
         a {
             position: absolute;
             top: 0;
             left: 0;
-            z-index: 2;
+            z-index: 1;
             width: 100%;
             height: 100%;
             text-decoration: none;

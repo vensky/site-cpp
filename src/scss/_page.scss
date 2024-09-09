@@ -1,0 +1,58 @@
+.page {
+    border-top: 1px solid #f3f3f3;
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    &__title {
+        font-size: 60px;
+        color: $color-blue;
+    }
+
+    &__body {
+        display: flex;
+        gap: 60px;
+
+        @media (max-width: 1020px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        border-radius: 8px;
+        flex-shrink: 0;
+        aspect-ratio: 280/320;
+        width: 30%;
+        overflow: hidden;
+
+        @media (max-width: 1020px) {
+            max-width: 420px;
+            width: 100%;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__file {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+
+        &[href$=".pdf"] {
+            &::before {
+                content: '';
+                position: relative;
+                top: 4px;
+                display: block;
+                flex-shrink: 0;
+                height: 32px;
+                width: 32px;
+                background-image: url(../img/pdf.svg);
+                background-size: contain;
+            }
+        }
+    }
+}
